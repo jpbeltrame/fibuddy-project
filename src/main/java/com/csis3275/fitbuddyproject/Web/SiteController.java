@@ -12,24 +12,24 @@ public class SiteController {
     @GetMapping(path = "/")
     public String IndexPageLoader(Model model) {
         model.addAttribute("page", "main");
-        return "main";
+        return "site/main";
     }
 
     @GetMapping(path = "/about")
     public String AboutPageLoader(Model model) {
         model.addAttribute("page", "about");
-        return "about";
+        return "site/about";
     }
 
     @GetMapping(path = "/support")
     public String SupportPageLoader(Model model) {
         model.addAttribute("page", "support");
-        return "support";
+        return "site/support";
     }
 
     @GetMapping(path = "/eula")
     public String EULAPageLoader(Model model) {
         model.addAttribute("page", "eula");
-        return "eula";
+        return "site/eula";
     }
 }
